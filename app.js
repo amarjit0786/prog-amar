@@ -112,7 +112,7 @@ app.get("/", (req, res) => {
     res.redirect("/listings");
 });
 // lisitngs route
-app.use("/listings",listingRouter);
+app.use("/",listingRouter);
 // Reviews routes access
 app.use("/listings/:id/reviews", reviewRouter );
 // User routes
