@@ -107,8 +107,10 @@ app.use((req,res,next)=>{
 
 // })
 
-
-
+// Root route → redirect to listings
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 // lisitngs route
 app.use("/listings",listingRouter);
 // Reviews routes access
